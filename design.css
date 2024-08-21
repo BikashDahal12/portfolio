@@ -229,121 +229,6 @@ padding: 40px;
  }
 
 
-/*services*/
-
- *{
-margin: 0px;
-padding: 0px;
-box-sizing: border-box;
- }
-body{
-
-font-family: 'poppins';
-overflow-x: hidden;
-line-height: 1.6em;
-}
-.Wrapper{
-    margin: 5% auto;
-    width:1170px;
-
-
-
-
-
-
-}
-.Wrapper h2{
-    text-transform: uppercase;
-    font-weight: bold;
-    text-align: center;
-    font-size: 40px;
-    
-    color: #f37b83;
-
-    padding: 15px;
-} 
- .single-services{
-    position: relative;
-    width: 31%;
-    height: 250px;
-    background: whitesmoke;
-    transition: .5s;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 0 15px;
-    float: left;
-    margin: 0 10px;
-    text-align: center; 
-}
-
- .line{
-    
-  display: flex;
-    background: none;
-    margin: 0 auto 60px auto;
-
-}  
-.line:hover{
-    transform:translateY(-2px);
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-
-}
-.single-services p{
-    color: #262626;
-    font-size: 12px;
-}
-.single-services h3{
-    font-size: 25px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #080808;
-    margin-bottom: 12px;
-} 
-  .social1{
-    width: 60px;
-    height: 60px;
-    background: #262626;
-    border-radius: 50%;
-    margin: 5% auto;
-    display: flex;
-    justify-content: space-between;
-} 
-
-
- .social1 i{
-    font-size: 30px;
-    padding: 12px;
-    color: #fff;
-} 
-
-.single-services span{
-    position: absolute;
-    top: 0;
-    left: -110;
-    width:100% ;
-    background: rgba(0,0,0,0.7);
-} 
-.single-services:hover span{
-left: 110%;
-}
- @media(max-width:600px){
-    .Wrapper{
-        width: 100%;
-    }
-    .single-services{
-        width: 95%;
-        margin-bottom: 30px;
-    }
-    .Wrapper h2{
-        font-size: 30px;
-    }
-} 
-
-
-
-
-
-
 /* skill */
 
 h2{
@@ -560,7 +445,64 @@ h2{
     margin: 0 auto;
     padding: 20px;
   }
+
+
+
+  /*******************************
+  CODE ADDED FOR EXAMPLE LAYOUT
+  ********************************/
+  .services {
+    padding: 60px 0;
+    background: grey;
+    color: #f37b83;
+  }
+
+  .services .wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .services h2 {
+    margin-bottom: 2rem;
+  }
   
-  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
   
     
+  .services__single {
+    background: rgb(235, 235, 235);
+    padding: 25px;
+    transition: all 0.2s ease-in;
+
+  }
+
+  .services__single:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    transition: all 0.2s ease-in;
+  }
+
+  .services__single i {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+
+  .services__single .h3 {
+    margin-bottom: 1rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
