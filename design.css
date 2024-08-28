@@ -42,7 +42,7 @@
     color: orangered;
     border-bottom: 3px solid orangered;
   }
-  .contact {
+   .contact {
     padding: 10px 28px;
     background-color: white;
     color: black;
@@ -52,7 +52,7 @@
     letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
-  }
+  } 
   .contact:hover {
     background-color: orangered;
     box-shadow: 0 0 25px orangered;
@@ -76,6 +76,38 @@
   .home-content h1 {
     font-size: 62px;
     line-height: 1.2;
+
+
+
+    /* underline h1 */
+    
+    .underline {
+      position: relative;
+      white-space: nowrap;
+      &:after {
+        --deco-height: 0.3125em;
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: calc(var(--deco-height) * -0.625);
+        height: var(--deco-height);
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='orangered' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+
+
+        background-size: auto 100%;
+        background-repeat: round;
+        background-position: 0em;
+        color: orangered;
+      }
+    }
+
+
+
+
+
+
+
   }
   .home-content p {
     font-size: 18px;
@@ -140,11 +172,15 @@
   .about-content h2 {
     text-align: left;
     color: white;
-    font-size: 42px;
+    font-size: 35px;
+    margin-bottom: 4px;
   }
-  .about-content h3 {
-    font-size: 40px;
+   .about-content h3 {
+    font-size: 30px;
     color: white;
+  } 
+  .about-content{
+    margin-bottom: 135px;
   }
   
   /*icon*/
@@ -497,7 +533,7 @@ transition: all 0.3s ease-in-out;
   /* services */
   .services {
     padding: 60px 0;
-    background: grey;
+    background: #e7d5d5;
   }
   
   .services .wrapper {
@@ -594,7 +630,7 @@ transition: all 0.3s ease-in-out;
   .icon_service_single i,
   .ag-courses-item_title {
     font-size: 18px;
-    color: black;
+    color: #121010;
     z-index: 2;
     position: relative;
     text-align: center;
@@ -615,21 +651,41 @@ transition: all 0.3s ease-in-out;
   }
 
 .hey1{
-  background-color: yellow;
+  background-color: rgb(212, 211, 132);
 
 }
 .hey2{
-  background-color: #ff5d75;
+  background-color: #e6bfc5;
 }  
   .hey3{
-    background-color: aqua;
+    background-color: rgb(170, 240, 240);
   }
+
   .ag-courses-item_title {
     color: black;
     font-weight: bold;
     text-align: center;
     z-index: 2;
   }
+
+.tt1{
+  margin-bottom: 15px;
+  font-size: 22px;
+  
+}
+.tt2{
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.tt3{
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+
+
+
+
   .icon_service_single i {
     font-size: 40px;
     margin-bottom: 2rem;
@@ -640,15 +696,6 @@ transition: all 0.3s ease-in-out;
   }
   
 
-
- 
-  
-
-
-
-
-
-
 /* contact */  
 
    .Contacts{
@@ -658,12 +705,18 @@ transition: all 0.3s ease-in-out;
    margin: auto;
    }
 
+ .Contacts p{
+  /* color: #a15f64; */
+font-weight: 600;
+} 
+
+
 .form-container {
     padding: 40px;
     border-radius: 20px;
     width: 60%;
 border: #080000;
-background-color: lightgray;
+/* background-color: lightgray; */
 margin: 20px;
  
     /* background-color: whitesmoke; */
@@ -682,7 +735,7 @@ h2 {
 .form-group label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    /* color: #555; */
 }
 
 .form-group input[type="text"],
@@ -698,7 +751,7 @@ h2 {
 
 .radio-group {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     margin-top: 10px;
 }
 
@@ -708,11 +761,12 @@ h2 {
 
 .radio-group label {
     color: #555;
+    margin: 3px;
 }
 
 .buttons {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
     margin-top: 30px;
 }
 
@@ -740,9 +794,9 @@ h2 {
   border-color: #110f0f;
   color: #080000;
   padding:  87px;
-  background-color: yellow;
-  margin: 20px;
-  border-radius: 20px;
+  background-color: rgb(255, 187, 0);
+  /* margin: 20px; */
+  /* border-radius: 20px; */
   text-align: center;
   align-items: center;
 
@@ -751,6 +805,7 @@ h2 {
 .hello2 p{
   line-height: 1.5;
   margin-top: 10px;
+  margin: 20px 0;
 }
 .hello2 img{ 
   height: 18%;
@@ -758,6 +813,23 @@ h2 {
   object-fit: cover;
   border-radius: 122px;
 }
+
 .hello2 h2{
-  margin-bottom: 20px;
+  margin-top: 93px;
+  color: #080000;
+}
+
+.icon {
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.icon:hover {
+  background-color: darkgray;
 }
