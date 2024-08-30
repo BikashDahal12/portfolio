@@ -8,9 +8,9 @@
     text-decoration: none;
     list-style: none;
   }
-  body{ 
+  /* body{ 
     padding: 0px !important;
-  }
+  } */
   .header1 {
     position: fixed;
     width: 100%;
@@ -305,7 +305,7 @@ transition: all 0.3s ease-in-out;
 
   .footer .copyright {
     margin-top: 15px;
-    text-align: center;
+    text-align: center;  
     font-size: 12px;
     color: white;
   }
@@ -521,15 +521,17 @@ transition: all 0.3s ease-in-out;
   
   /* services */
   .services {
-    padding: 60px 0;
+    width: 100%;
+    
+
+    /* padding: 60px 0; */
     background: #e7d5d5;
   }
   
   .services .wrapper {
     display: flex;
-    
-    flex-direction: row;
-    gap: 30px;
+    width: 80%;
+    margin: auto;  
     position: relative;
   }
   
@@ -539,25 +541,32 @@ transition: all 0.3s ease-in-out;
   }
   
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
   
   .services__single {
-    background: whitesmoke;
+
+    display: flex;
+    margin-bottom: 10px;
     /* padding: 25px; */
     /* transition: all 0.2s ease-in; */
     position: relative;
+    
   }
   
   .services__single:hover,
   .ag-courses_item:hover {
     /* transform: translateY(-2px); */
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); 
     /* transition: all 0.2s ease-in; */
     cursor: pointer;
   }
+  .ag-courses_item{
+   /* box-shadow: #a15f64; */
   
+  margin: 10px;
+  }
   .bg {
     background-color: black;
     position: absolute;
@@ -821,13 +830,13 @@ h2 {
 }
 
 
-@media (max-width:900px){
+
+
+ @media (max-width:750px){
    .header1{
     padding: 0 5%;
     margin-bottom: 10px;
    } 
-
-
 .home{
   gap:30px;
   flex-wrap: wrap;
@@ -835,16 +844,195 @@ h2 {
 .home-content{
   margin-top: 35px;
 }
-
   .about{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
-    
+    width: 100%;
   }
-  .about-img{
+  
+} 
+
+
+
+@media (max-width: 768px) {
+  .home, .about {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+.services__single{
+display: flex;
+flex-direction: column;
+}
+  .img-square, .about-img {
+    max-width: 80%;
+
     padding: 10px;
     margin: 10px;
     gap: none;
+  }
+
+  .home-content, .about-content {
+    max-width: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .home-content p, .about-content p {
+    font-size: 16px;
+  }
+
+  .btn-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-box .btn-1, .btn-box .btn-2 {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+
+/* services */
+
+@media (max-width: 750px) {
+  .ag-courses_item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ag-courses-item_bg {
+    height: 100px;
+  }
+
+  .icon_service_single i {
+    font-size: 30px;
+  }
+
+  .ag-courses-item_title {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .ag-courses-item_date-box {
+    padding: 15px;
+  }
+.container{
+  display: flex;
+  flex-direction: column;
+}
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+}
+
+
+
+
+
+/* experience */
+
+@media (max-width: 768px) {
+  .experience1 {
+    flex-direction: column;
+  }
+
+  .experience,
+  .experience2 {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .experience-date h3,
+  .experience2 h2 {
+    font-size: 1em;
+  }
+
+  .experience-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bar {
+    margin: 10px 0;
+  }
+
+  .experience-line {
+    height: 40px;
+  }
+
+  .experience2 p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-date h3 {
+    font-size: 0.8em;
+  }
+
+  .experience-circle {
+    width: 15px;
+    height: 15px;
+  }
+
+  .insideCircle {
+    width: 7px;
+    height: 7px;
+  }
+
+  .experience-line {
+    height: 30px;
+  }
+
+  .wrap p {
+    font-size: 0.8em;
+  }
+
+  .experience2 p {
+    font-size: 0.8em;
+  }
+}
+
+
+
+
+
+/* form */
+
+@media (max-width: 768px) {
+  .radio-group {
+      flex-direction: column;
+  }
+
+  .buttons {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .buttons button {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+      padding: 10px;
+  }
+
+  .form-group input[type="text"] {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .buttons button {
+      padding: 8px;
+      font-size: 14px;
   }
 }
