@@ -14,7 +14,7 @@ rel="stylesheet" />
     <title>portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
-  <body >
+  <body>
 
     <!-- Example Code -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -157,7 +157,6 @@ rel="stylesheet" />
     </section>
     <!-- SERVICES SECTION HOMEPAGE -->
 
-
 <section id="skills">
     <h2> Skills</h2>
     <div class="skill-area">
@@ -185,8 +184,9 @@ rel="stylesheet" />
         </div>
       </div>
     </div>
-  </section>
+  </section> 
 
+ 
     <section id="experience" class="experience1">
       <div class="experience">
         <div class="experience-table-content">
@@ -322,7 +322,7 @@ rel="stylesheet" />
     </section>
 
 
-    <section id="contacts">
+    <section id="contact me">
 <div class="Contacts">
   <div class="hello2">
     <img src="assects/bpp.jpg" alt="" />
@@ -331,7 +331,7 @@ rel="stylesheet" />
 <p>
   The "Contact" section in the code provided is part of a simple contact form layout.
    It typically serves the purpose of gathering information from users or visitors, 
-   such as their name, phone number, gender, education status, and weight range.
+   such as their name, phone number, email and description.
     </p>
     <i class="icon">&#x2192;</i>
 
@@ -339,56 +339,39 @@ rel="stylesheet" />
   </div>
     <div class="form-container">
       
-      <form>
-          <div class="form-group">
-              <label for="name">Name</label>
-              <input type="text" id="name" placeholder="First Name">
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="9d5fb249-3de4-4955-b9e3-b2514da487ba">
+
+        <div class="form-group">
+              <label for="First Name" > First Name</label>
+              <input type="text" name="name" id="name" placeholder="First Name">
           </div>
           <div class="form-group">
               <label for="last name">Last Name</label>
-              <input type="text" id="last" placeholder="Last Name">
+              <input type="text" id="last" name="name" placeholder="Last Name">
           </div>
           <div class="form-group">
               <label for="phone">phone</label>
-              <input type="text" id="phone" placeholder="00000">
-          </div>
+              <input type="number"  id="phone" name="phone" placeholder="00000">
+          </div>   
           <div class="form-group">
-              <label for="gender">Gender</label>
-              <div class="radio-group">
-                  <input type="radio" id="female" name="gender">
-                  <label for="female">Female</label>
-                  <input type="radio" id="male" name="gender">
-                  <label for="male">Male</label>
-              </div>
-          </div>
-          <div class="form-group">
-              <label for="Educated">Educated or Uneducated</label>
-              <div class="radio-group">
-                  <input type="radio" id="yes" name="Educated">
-                  <label for="yes">Yes</label>
-                  <input type="radio" id="no" name="educated">
-                  <label for="no">No</label>
-              </div>
-          </div>
-          <div class="form-group">
-              <label for="weight">Weight</label>
-              <div class="radio-group">
-                  <input type="radio" id="10-25" name="weight">
-                  <label for="10-25">10-25 </label> 
-                  <input type="radio" id="25-50" name="weight">
-                  <label for="25-50"> 25-50</label>
-                  <input type="radio" id="50-80" name="weight">
-                  <label for="50-80">50-80 </label>
-                  <input type="radio" id="100+" name="weight">
-                  <label for="100+">100+ </label>
-              </div>
-          </div>
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="@gmail">
+        </div>
+        <div class="form-group">
+        <label for="description">Description</label>
+        <textarea type="text" name="message" placeholder="Enter your description here"></textarea>
+        </div>
           
-          <div class="buttons">
-              <button type="button" class="back-button">Submit</button>
-              <button type="submit" class="next-button">Cancel</button>
-          </div>
-        </form>
+              
+              <div class="buttons">
+                <button type="submit" class="back-button">Submit</button>
+                <!-- <button type="submit" class="next-button">Cancel</button>  -->
+            </div>
+          </form>
+            </div>
+          
+         
           </div>
   </div>
 </section>
