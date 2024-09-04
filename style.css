@@ -11,7 +11,7 @@
   /* body{ 
     padding: 0px !important;
   } */
-  .header1 {
+   .header1 {
     position: fixed;
     width: 100%;
     padding: 35px 12%;
@@ -40,11 +40,11 @@
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
   }
-  .navbar a:hover,
-  .navbar a.active {
+  .navbar a:hover{
     color: orangered;
-     /* border-bottom: 3px solid orangered;  */
+
   }
+ 
    .contact {
     padding: 10px 28px;
     background-color: white;
@@ -55,12 +55,33 @@
     letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
-  } 
+  }  
+  
+.navbar-nav .nav-link:hover {
+  color:orangered; 
+  text-decoration: none;
+   border-bottom: 2px solid orangered;  
+}
+.navbar-brand a{
+  color: orangered;
+}
+
+   .navbar-brand:hover{
+color: orangered;
+text-decoration: none;
+border-bottom: 2px solid orangered;
+   }
+
+  /* .nav-link .active:hover{
+color:#f37b83;
+  } */
   .contact:hover {
     background-color: orangered;
-    box-shadow: 0 0 25px orangered;
-    color: white;
+     box-shadow: 0 0 25px orangered; 
+     color: white; 
   }
+  
+
   .home {
     /* width: 100%; */
     width: 90%;
@@ -86,7 +107,7 @@
   }
    .active{
     width:110px !important;
-    border-bottom: 3px solid orangered !important;
+     /* border-bottom: 3px solid orangered !important; */ */
   }
     /* underline h1 */
     
@@ -694,12 +715,11 @@ font-weight: 600;
 
 
 .form-container {
-    padding: 40px;
+     padding: 40px; 
     border-radius: 20px;
     width: 60%;
 border: #080000;
-/* background-color: lightgray; */
-margin: 20px;
+
  
     /* background-color: whitesmoke; */
 }
@@ -817,6 +837,8 @@ h2 {
 .icon:hover {
   background-color: darkgray;
 }
+
+
 
 @media (max-width: 768px){
   body{
@@ -1003,4 +1025,17 @@ h2 {
 }
 
 
+/* Media Query for Desktops */
+@media only screen and (max-width: 992px) {
+  body{
+    overflow-x: hidden;
 
+  }
+
+
+
+
+  }
+
+
+  
